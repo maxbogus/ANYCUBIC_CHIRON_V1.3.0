@@ -574,12 +574,17 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 4
-#define DEFAULT_YJERK                 4
+#define DEFAULT_XJERK                 6
+#define DEFAULT_YJERK                 6
 #define DEFAULT_ZJERK                 0.4
 #define DEFAULT_EJERK                 20
 
-
+/**
+* S-Curve Acceleration *
+* This option eliminates vibration during printing by fitting a Bézier
+* curve to move acceleration, producing much smoother direction changes. *
+* See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained */
+#define S_CURVE_ACCELERATION
 
 
 //===========================================================================
