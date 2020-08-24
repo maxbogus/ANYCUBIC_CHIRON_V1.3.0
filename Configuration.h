@@ -51,9 +51,9 @@
  */
 #define CONFIGURATION_H_VERSION 010100
 
-#define MSG_MY_VERSION "V1.3.0"
+#define MSG_MY_VERSION "V1.3.0_TMC2208"
 
-#define OutageTest  //断电续打
+#define OutageTest
 
 #define TFTmodel
 
@@ -129,7 +129,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000]
  */
-#define BAUDRATE 250000
+#define BAUDRATE 115200
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
